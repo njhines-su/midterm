@@ -57,22 +57,22 @@ nav {
   content: "";
   display: block;
   height: 1px;
-  width: 8.5%;
+  width: 8%;
   position: absolute;
   background-color: #FFF;
-  left: 20%;
-  top: 32px;
+  left: 19.5%;
+  top: 34px;
   
 }
 .hero-name::after {
   content: "";
   display: block;
   height: 1px;
-  width: 8.5%;
+  width: 8%;
   position: absolute;
   background-color: #FFF;
-  right: 20%;
-  top: 32px;
+  right: 19.5%;
+  top: 34px;
   
 }
 
@@ -87,7 +87,7 @@ nav {
 }
 .patagonia{
   background-image: url('images/patagonia-dark.png');
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   height:800px;
   width:100%;
@@ -105,6 +105,10 @@ nav {
 
 
 
+
+@media(max-width:992px){
+  .patagonia{ height:650px;}
+}
 @media(max-width:768px){
   .navbar-nav {flex-direction: row;}
   .social {margin-left: 1rem;}
@@ -113,6 +117,13 @@ nav {
   .hero-name::after {display: none;}
   .patagonia{ height:500px;}
 }
+@media(max-width:480px){
+  
+}
+@media(max-width:420px){
+  .underbar a:after {width:15%;}
+}
+
 
 
 
@@ -125,11 +136,19 @@ nav {
   .hero-name::before {width: 9%;}
   .hero-name::after {width: 9%;}
 }
+@media(min-width:925px){
+  .hero-name::before {left:21%;}
+  .hero-name::after {right:21%;}
+}
 @media(min-width:1000px){
-  .hero-name::before {left:24%;}
-  .hero-name::after {right:24%;}
+  .hero-name::before {left:23%;}
+  .hero-name::after {right:23%;}
 }
 @media(min-width:1100px){
-  .hero-name::before {left:26%;}
-  .hero-name::after {right:26%;}
+  .hero-name::before {left:25%;}
+  .hero-name::after {right:25%;}
+}
+@media(min-width:1200px){
+  .hero-name::before {left:26.5%;}
+  .hero-name::after {right:26.5%;}
 }
