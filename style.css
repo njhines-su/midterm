@@ -228,9 +228,10 @@ nav {
   .hero-name::after {display: none;}
   .name::before {display: none;}
   .name::after {display: none;}
-  .patagonia{ height:600px;}
-  .namib{ height:600px;}
-  .lake{ height:600px;}
+  .patagonia{ height:600px;background-image: url('images/patagonia-dark-fast.png');}
+  .namib{ height:600px; background-image: url('images/Namib-dark-fast.png');}
+  .lake{ height:600px; background-image: url('images/lake-dark-fast.png');}
+  
 }
 @media(max-width:480px){
   .patagonia{ height:550px;}
