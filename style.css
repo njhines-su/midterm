@@ -8,6 +8,31 @@ h1 {
 .garamond{
   font-family: 'Cormorant Garamond', serif;
 }
+.roboto-about-1 {
+  font-family: 'Roboto', sans-serif;
+  font-size:1.5rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 175%;
+}
+.roboto-about-2 {
+  font-family: 'Roboto', sans-serif;
+  font-size:1rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 175%;
+  color: #6e6e6e;
+}
+.roboto-about-3 {
+  font-family: 'Roboto', sans-serif;
+  font-size:1.25rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 175%;
+}
 .roboto-hero {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
@@ -197,8 +222,8 @@ nav {
   
 }
 .headshot {
-  height: 250px;
-  width:250px;
+  height: 300px;
+  width:300px;
   border-radius: 100%;
 }
 .space {
@@ -238,6 +263,10 @@ nav {
   .namib{ height:550px;}
   .lake{ height:550px;}
   .roboto-hero {font-weight: 300;}
+  .name {font-size: 3rem;}
+  .roboto-about-1{font-size: 1.25rem;}
+  .roboto-about-2{font-size: 0.75rem;}
+  .roboto-about-3{font-size: 1rem;}
 }
 @media(max-width:420px){
   .underbar a:after {width:15%;}
