@@ -8,9 +8,19 @@ h1 {
 .garamond{
   font-family: 'Cormorant Garamond', serif;
 }
-.roboto {
+.roboto-hero {
   font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  letter-spacing: 4px;
 }
+.white-bg{
+  background-color: #FFF
+}
+.black-bg{
+  background-color: #000
+}
+
+/* Nav */
 
 .logo{
     height: 30px;
@@ -34,6 +44,63 @@ nav {
   background-color:white;
   /*border-bottom: 2px solid black;*/
 }
+
+  /* Hamburger */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+.hamburger {
+  height:80%;
+}
+.navbar-toggler span {
+   display: block;
+   background-color: #000;
+   height: 1px;
+   width: 25px;
+   margin-top: 6px;
+   margin-bottom: 6px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 10px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    top: -14px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
+
 .underbar a {position: relative;}
 .underbar a:after {content:""; display:block; position:absolute; left:0; bottom:5px; width:100%; height:1px; background-color:#555; transform:scaleX(0); transform-origin:center; transition:.45s;}
 .underbar a:hover::after{transform: scaleX(1);}
@@ -79,23 +146,65 @@ nav {
 .mid-line{
   display:block;
   height: 1px;
-  width:30%;
-  margin-bottom: .5rem;
+  width:35%;
+  margin-bottom: .75rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFF;
 }
 .patagonia{
   background-image: url('images/patagonia-dark.png');
   background-position: center center;
   background-size: cover;
-  height:800px;
+  height:700px;
+  width:100%;
+}
+.namib{
+  background-image: url('images/Namib-dark.png');
+  background-position: center center;
+  background-size: cover;
+  height:700px;
+  width:100%;
+}
+.lake{
+  background-image: url('images/lake-dark.png');
+  background-position: center center;
+  background-size: cover;
+  height:700px;
   width:100%;
 }
 
-
-
-
+/* About Section */
+.name::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 8%;
+  position: absolute;
+  background-color: #000;
+  left: 16%;
+  top: 34px;
+  
+}
+.name::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 8%;
+  position: absolute;
+  background-color: #000;
+  right: 16%;
+  top: 34px;
+  
+}
+.headshot {
+  height: 250px;
+  width:250px;
+  border-radius: 100%;
+}
+.space {
+  width:100%;
+  height:1000px;
+}
 
 
 
@@ -108,6 +217,8 @@ nav {
 
 @media(max-width:992px){
   .patagonia{ height:650px;}
+  .namib{ height:650px;}
+  .lake{ height:650px;}
 }
 @media(max-width:768px){
   .navbar-nav {flex-direction: row;}
@@ -115,10 +226,16 @@ nav {
   .underbar a:after {width:10%;}
   .hero-name::before {display: none;}
   .hero-name::after {display: none;}
-  .patagonia{ height:500px;}
+  .name::before {display: none;}
+  .name::after {display: none;}
+  .patagonia{ height:600px;}
+  .namib{ height:600px;}
+  .lake{ height:600px;}
 }
 @media(max-width:480px){
-  
+  .patagonia{ height:550px;}
+  .namib{ height:550px;}
+  .lake{ height:550px;}
 }
 @media(max-width:420px){
   .underbar a:after {width:15%;}
@@ -139,10 +256,18 @@ nav {
 @media(min-width:925px){
   .hero-name::before {left:21%;}
   .hero-name::after {right:21%;}
+  .name::before {left:17%;}
+  .name::after {right:17%;}
+}
+@media(min-width:992px){
+  .name::before {left:23%;}
+  .name::after {right:23%;}
+  
 }
 @media(min-width:1000px){
   .hero-name::before {left:23%;}
   .hero-name::after {right:23%;}
+  
 }
 @media(min-width:1100px){
   .hero-name::before {left:25%;}
@@ -151,4 +276,6 @@ nav {
 @media(min-width:1200px){
   .hero-name::before {left:26.5%;}
   .hero-name::after {right:26.5%;}
+  .name::before {left:26.5%;}
+  .name::after {right:26.5%;}
 }
