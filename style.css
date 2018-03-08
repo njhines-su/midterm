@@ -14,10 +14,10 @@ h1 {
   letter-spacing: 4px;
 }
 .white-bg{
-  background-color: #FFF
+  background-color: #FFF;
 }
 .black-bg{
-  background-color: #000
+  background-color: #000;
 }
 
 /* Nav */
@@ -236,6 +236,7 @@ nav {
   .patagonia{ height:550px;}
   .namib{ height:550px;}
   .lake{ height:550px;}
+  .roboto-hero {font-weight: 300;}
 }
 @media(max-width:420px){
   .underbar a:after {width:15%;}
