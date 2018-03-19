@@ -1,9 +1,23 @@
 .vertical-text {
   display: inline
   }
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(110, 110, 110, .4);
+  }
 h1 {
   font-size: 3.75em;
   margin-bottom: 0px;
+}
+.card {
+  border-radius: 0%;
+}
+.card-img-top{
+  border-radius: 0%;
+}
+.edu-header{
+  font-size: 3vw;
 }
 .black-text{
   color:#000;
@@ -268,11 +282,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
-.line {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(110, 110, 110, .4);
-}
+
 .job{
   width:100%;
 }
@@ -283,9 +293,16 @@ nav {
   letter-spacing: 4px;
   text-align: center;
   line-height: 175%;
+  border-top: 1px solid rgba(110, 110, 110, .2);
 }
+
 .job-img{
   background-image: url('images/sidearm.png');
+  background-position: center center;
+  background-size: cover;
+}
+.job-2-img{
+  background-image: url('images/cuse-fb.png');
   background-position: center center;
   background-size: cover;
 
@@ -298,6 +315,13 @@ nav {
 .company{
   font-family: 'Cormorant Garamond', serif;
   font-size:2.5vw;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-align: left;
+}
+.company-fb{
+  font-family: 'Cormorant Garamond', serif;
+  font-size:1.8vw;
   font-weight: bold;
   letter-spacing: 4px;
   text-align: left;
@@ -318,9 +342,10 @@ nav {
 .content{
   width: 100%;
   margin-bottom: 10px;
-  font-size: .75em;
+  font-size: .85em;
 }
 
+/* Education Section */
 
 
 
@@ -343,15 +368,17 @@ nav {
   .patagonia{ height:600px;background-image: url('images/patagonia-dark-fast.png');}
   .namib{ height:600px; background-image: url('images/Namib-dark-fast.png');}
   .lake{ height:600px; background-image: url('images/lake-dark-fast.png');}
-  .job-text{order:3; height:100%; margin-left: 10px;}
+  .job-text{order:3; height:100%;}
   .job-img{order:1;height: 50vh;}
-  .date{order:2; height: 0vh; text-align: left;margin-left: 10px;margin-top: 8px;font-size:.75rem; }
-  .company{font-size:5.5vw; margin-left:10px;margin-top:0px; line-height: 120%; }
+  .job-2-img{order:1;height: 50vh;}
+  .date{order:2; display:none; }
+  .company{font-size:5.5vw; ;margin-top:10px; line-height: 120%; }
+  .company-fb{font-size:5.5vw; ;margin-top:10px; line-height: 120%; }
   .date > p { display:none;}
-  .underline{ margin-left: 10px;}
-  .place{margin-left:10px;}
+  .place{margin-top:2px;}
   .number{display:none;height:0px;}
-  .content{ order:2;margin-left: 10px; margin-top: 10px;}
+  .content{ order:2; margin-top: 10px;font-size: .9em}
+  .edu-header{font-size: 6vw;}
 }
 
 @media(max-width:480px){
@@ -369,10 +396,6 @@ nav {
 }
 
 
-
-
-
-
 @media(min-width:768px){
  .mid-line{display:none;}
  .mid-line-work{display:none;}
@@ -381,7 +404,6 @@ nav {
   transform: rotate(-90deg) translateX(-100%) translateY(-50%);
   transform-origin: 0 0;
   position: absolute;
-  left: 60%;
   top: 8%;
   white-space: nowrap;
   }
@@ -394,9 +416,14 @@ nav {
   color: #6e6e6e;
   }
   .content{
-    height: 225px;
+    min-height: 225px;
+  }
+  .job-text{border-top: 1px solid rgba(110, 110, 110, .2);}
+  .border-bottom{
+    border-top: 1px solid rgba(110, 110, 110, .2);
   }
 }
+
 @media(min-width:850px){
   .hero-name::before {width: 9%;}
   .hero-name::after {width: 9%;}
