@@ -247,6 +247,7 @@ nav {
   margin-right: auto;
 }
 .patagonia{
+  background-color: black;
   background-image: url('images/patagonia-dark.png');
   background-position: center center;
   background-size: cover;
@@ -254,6 +255,7 @@ nav {
   width:100%;
 }
 .namib{
+  background-color: black;
   background-image: url('images/Namib-dark.png');
   background-position: center center;
   background-size: cover;
@@ -261,6 +263,7 @@ nav {
   width:100%;
 }
 .lake{
+  background-color: black;
   background-image: url('images/lake-dark.png');
   background-position: center center;
   background-size: cover;
